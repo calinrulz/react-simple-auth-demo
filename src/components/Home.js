@@ -18,7 +18,6 @@ export default class Home extends Component {
   }
 
   storeToken() {
-    // console.log(this.state.tokenBox);
     if (this.state.tokenBox === 'pYRmy2tTmGXBhhkF9sNIMKeseOwjU5L2') {
       console.log(this.state.tokenBox);
     }
@@ -35,18 +34,18 @@ export default class Home extends Component {
             <p>Add here the token based auth to continue with login</p>
 
             <div className="form-container">
-                <div className="form-group">
-                  <input
-                    type="text"
-                    name="tokenBox"
-                    className="form-control"
-                    placeholder="Enter the given token"
-                    value={ this.state.tokenBox }
-                    onChange={ this.handleChange }
-                  />
-                </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="tokenBox"
+                  className="form-control"
+                  placeholder="Enter the given token"
+                  value={ this.state.tokenBox }
+                  onChange={ this.handleChange }
+                />
+              </div>
 
-                <button value="Send" className="btn btn-primary" onClick={ this.storeToken }>Submit</button>
+              <button value="Send" className="btn btn-primary" onClick={ this.storeToken }>Submit</button>
             </div>
           </div>
         </div>
